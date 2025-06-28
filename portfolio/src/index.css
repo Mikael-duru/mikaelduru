@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**** 
+BASE STARTS 
+****/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	@apply bg-zinc-900 text-zinc-50 font-inter;
+}
+
+@layer utilities {
+	.transition-filter {
+		transition-property: filter;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 150ms;
+	}
+
+	.transition-width {
+		transition-property: width;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 150ms;
+	}
+}
+/**** 
+BASE ENDS 
+****/
+
+/**** 
+TYPOGRAPHY STARTS 
+****/
+.gradient_text {
+	@apply max-w-max;
+	background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.headline-1 {
+	@apply text-4xl sm:text-5xl md:text-[44px] md:leading-[1.15] font-semibold lg:text-[55px] gradient_text;
+}
+
+.headline-2 {
+	@apply text-4xl font-semibold sm:text-5xl gradient_text;
+}
+
+.headline-3 {
+	@apply text-2xl font-semibold sm:text-3xl gradient_text;
+}
+
+.title-1 {
+	@apply text-xl font-normal;
+}
+
+.outline_text {
+	@apply mb-2 text-base text-zinc-500;
+}
+
+/**** 
+TYPOGRAPHY ENDS 
+****/
+
+/**** 
+UTILITIES STARTS 
+****/
+.swiper-pagination-bullet {
+	@apply border border-gray-100;
+}
+
+.material-symbols-rounded {
+	@apply w-[1em] h-[1em] overflow-hidden;
+	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.container {
+	@apply px-4 mx-auto lg:px-6 xl:max-w-7xl;
+}
+
+.img_container {
+	@apply overflow-hidden bg-zinc-700;
+}
+
+.img_cover {
+	@apply object-cover w-full h-full;
+}
+
+.section {
+	@apply pt-20 lg:pt-32 scroll-mt-14;
+}
+
+.spinner {
+	@apply size-[50px] rounded-full border-4 border-emerald-50 border-t-emerald-500 will-change-transform;
+}
+
+/**** 
+UTILITIES ENDS 
+****/
+
+/**** 
+BUTTON STARTS 
+****/
+.btn {
+	@apply flex items-center justify-center w-full gap-2 px-4 text-sm font-medium transition-colors rounded-md max-w-fit h-9 ring-1 ring-zinc-50/5 ring-inset;
+}
+
+.btn-secondary {
+	@apply transition-colors border bg-zinc-50 border-zinc-50 text-zinc-900 active:bg-zinc-50/80;
+}
+
+.btn .material-symbols-rounded {
+	@apply text-[18px];
+}
+
+.btn-primary {
+	@apply transition-all border bg-emerald-900 border-emerald-400 h-11 text-emerald-50 hover:bg-emerald-800 active:scale-[0.96];
+}
+
+.btn-outline {
+	@apply relative z-0 overflow-hidden bg-transparent border h-11 border-emerald-400 hover:border-emerald-600 active:scale-[0.96] text-emerald-50 transition-all;
+}
+/**** 
+BUTTON ENDS 
+****/
+
+/**** 
+HEADER STARTS 
+****/
+.logo {
+	@apply text-[25px] text-zinc-50 font-semibold;
+}
+
+.menu_btn {
+	@apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-md ring-inset ring-1 ring-zinc-50/[0.02] transition-transform transition-colors active:scale-95 hover:bg-zinc-50/15;
+}
+
+.navbar {
+	@apply absolute right-0 p-2 mt-2 transition-opacity transition-transform scale-90 max-md:opacity-0 rounded-xl transition-filter top-full min-w-52 max-md:bg-zinc-800 ring-inset max-md:ring-1 ring-zinc-100/10 isolate max-md:blur-md md:visible md:static md:flex md:items-center md:mt-0 md:scale-100 backdrop-blur-3xl;
+}
+
+.navbar.open {
+	@apply visible scale-100 opacity-100 blur-0;
+}
+
+.nav-link {
+	@apply flex items-center gap-3 p-4 text-sm font-medium tracking-wide transition-colors ease-in-out max-md:mb-2 duration-0 h-9 text-zinc-50/50 hover:text-zinc-50;
+}
+
+.nav-link.active {
+	@apply border rounded-md bg-zinc-50 border-zinc-50 text-zinc-900;
+}
+/**** 
+HEADER ENDS 
+****/
+
+/**** 
+FOOTER STARTS 
+****/
+.label {
+	@apply block mb-2 text-sm font-normal text-zinc-200;
+}
+
+.text_field {
+	@apply block w-full px-3 py-4 text-sm transition-colors rounded-lg outline-none bg-zinc-800 ring-1 ring-inset ring-transparent hover:ring-emerald-700 focus:ring-emerald-600 focus:ring-2;
+}
+
+.text_field::placeholder {
+	@apply text-zinc-400;
+}
+
+/**** 
+FOOTER ENDS 
+****/
