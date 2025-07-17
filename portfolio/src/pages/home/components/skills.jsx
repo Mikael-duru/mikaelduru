@@ -34,9 +34,10 @@ const Skills = () => {
 							initial={{ opacity: 0 }}
 							whileInView={{ opacity: 1 }}
 							transition={{ delay: 0.7, duration: 0.5 }}
-							className="text-zinc-400 md:max-w-[50ch] mx-auto"
+							className="text-zinc-400 md:max-w-[60ch] mx-auto"
 						>
-							Essential tools I use to build modern web applications.
+							Essential tools I use to transform ideas into scalable,
+							interactive web apps.
 						</motion.p>
 					</div>
 
