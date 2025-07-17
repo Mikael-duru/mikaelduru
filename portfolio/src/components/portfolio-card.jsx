@@ -15,7 +15,9 @@ const PortfolioCard = ({ item }) => {
 			<div>
 				<h3 className="title-1">{item.title}</h3>
 
-				<p className="my-2 text-sm lg:mb-4 text-zinc-300">{item.desc}</p>
+				<p className="my-2 text-sm line-clamp-2 lg:mb-4 text-zinc-300">
+					{item.desc}
+				</p>
 
 				<div className="flex items-center justify-between gap-5 pt-1">
 					<ButtonPrimary
