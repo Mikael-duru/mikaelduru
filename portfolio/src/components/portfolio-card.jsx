@@ -15,7 +15,7 @@ const PortfolioCard = ({ item }) => {
 			<div>
 				<h3 className="title-1">{item.title}</h3>
 
-				<p className="my-2 text-sm line-clamp-2 lg:mb-4 text-zinc-300">
+				<p className="mt-2 mb-6 text-sm line-clamp-2 text-zinc-300">
 					{item.desc}
 				</p>
 

@@ -38,7 +38,7 @@ const About = () => {
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
 						transition={{ duration: 0.8 }}
-						className="flex items-start"
+						className="flex items-start max-sm:flex-col"
 					>
 						<motion.figure
 							initial={{ opacity: 0, scale: 0.9 }}
@@ -50,7 +50,23 @@ const About = () => {
 								width={200}
 								height="auto"
 								alt=""
-								className="invert max-md:hidden mr-6 md:w-[150px] lg:w-[200px]"
+								className="invert max-lg:hidden mr-6 md:w-[150px] lg:w-[200px]"
+							/>
+						</motion.figure>
+
+						<motion.figure
+							initial={{ scale: 0 }}
+							whileInView={{ scale: 1 }}
+							transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+							className="w-[150px] h-auto max-sm:mb-6 sm:mr-6 rounded-lg lg:hidden img_container mt-1.5"
+						>
+							<img
+								src="/assets/my_pic.png"
+								width={40}
+								height={40}
+								loading="lazy"
+								alt="Mikael Duru Portrait"
+								className="img_cover"
 							/>
 						</motion.figure>
 
@@ -63,7 +79,7 @@ const About = () => {
 						>
 							<p className="text-zinc-300 md:max-w-[65ch] mb-5 lg:mb-8">
 								Hi! I&apos;m{" "}
-								<span className="text-lg font-semibold text-emerald-50">
+								<span className="text-lg font-semibold text-zinc-50">
 									Duru Michael C.
 								</span>
 								, an experienced front-end/web app developer with a strong

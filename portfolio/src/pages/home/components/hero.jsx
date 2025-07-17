@@ -13,14 +13,14 @@ const Hero = () => {
 			className="pt-32"
 		>
 			<div className="container items-center md:grid lg:grid-cols-2 md:gap-20">
-				<div className="max-w-[60ch] max-lg:mx-auto">
+				<div className="max-w-[65ch] max-lg:mx-auto">
 					<div>
 						<div className="flex items-center gap-3">
 							<motion.figure
 								initial={{ scale: 0 }}
 								whileInView={{ scale: 1 }}
 								transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
-								className="w-20 h-20 rounded-lg img_container lg:w-9 lg:h-9"
+								className="rounded-lg img_container w-9 h-9"
 							>
 								<img
 									src="/assets/my_pic.png"
