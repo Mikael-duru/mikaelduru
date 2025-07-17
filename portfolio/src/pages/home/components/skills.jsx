@@ -9,7 +9,7 @@ const Skills = () => {
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1 }}
 			id="skills"
-			className="section xl:px-24"
+			className="section"
 		>
 			<div className="container">
 				<div>

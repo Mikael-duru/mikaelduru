@@ -8,7 +8,7 @@ import {
 
 const About = () => {
 	return (
-		<section id="about" className="xl:px-24 section">
+		<section id="about" className="section">
 			<div className="container">
 				<motion.div
 					initial={{ opacity: 0 }}

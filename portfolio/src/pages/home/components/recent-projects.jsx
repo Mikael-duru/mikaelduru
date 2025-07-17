@@ -58,7 +58,7 @@ const RecentProjects = () => {
 							initial="hidden"
 							whileInView="visible"
 							viewport={{ once: true, amount: 0.2 }}
-							className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(310px,1fr))]"
+							className="project_card_content"
 						>
 							{recentProjects.map((item, index) => (
 								<motion.li

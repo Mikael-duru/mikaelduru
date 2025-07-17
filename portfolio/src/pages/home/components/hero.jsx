@@ -10,7 +10,7 @@ const Hero = () => {
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1 }}
 			id="home"
-			className="pt-32 xl:px-24"
+			className="pt-32"
 		>
 			<div className="container items-center md:grid md:grid-cols-2 md:gap-20">
 				<div>
@@ -59,7 +59,7 @@ const Hero = () => {
 							transition={{ duration: 0.8, delay: 0.5 }}
 							className="mb-8 text-sm sm:text-base lg:mb-10 text-zinc-300"
 						>
-							{/* <Typewriter
+							<Typewriter
 								words={["Pixels, performance, and purpose — that's my stack."]}
 								loop={0}
 								cursor
@@ -68,7 +68,7 @@ const Hero = () => {
 								typeSpeed={80}
 								deleteSpeed={50}
 								delaySpeed={1500}
-							/> */}
+							/>
 						</motion.p>
 					</>
 
