@@ -83,7 +83,7 @@ const AllProjects = () => {
 								initial={{ opacity: 0 }}
 								whileInView={{ opacity: 1 }}
 								transition={{ delay: 0.9, duration: 0.6 }}
-								className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))]"
+								className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(310px,1fr))]"
 							>
 								{currentProjects.map((item, index) => (
 									<motion.div
