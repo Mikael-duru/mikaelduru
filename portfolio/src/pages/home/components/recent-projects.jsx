@@ -45,8 +45,7 @@ const RecentProjects = () => {
 						transition={{ delay: 0.7, duration: 0.5 }}
 						className="text-zinc-400 md:max-w-[50ch] mx-auto"
 					>
-						Here are some of my recent projects, showcasing my expertise in
-						front-end/web app development.
+						Here's a glimpse of some exciting projects 👨‍💻 I've done.
 					</motion.p>
 				</div>
 
@@ -59,7 +58,7 @@ const RecentProjects = () => {
 							initial="hidden"
 							whileInView="visible"
 							viewport={{ once: true, amount: 0.2 }}
-							className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))]"
+							className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(310px,1fr))]"
 						>
 							{recentProjects.map((item, index) => (
 								<motion.li
