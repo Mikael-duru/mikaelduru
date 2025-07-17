@@ -12,7 +12,7 @@ const Header = () => {
 
 	return (
 		<header className="fixed top-0 left-0 z-40 flex items-center w-full h-20 border-b drop-shadow-lg bg-gradient-to-b from-zinc-900 to-zinc-900/10 backdrop-blur-xl border-zinc-500/20">
-			<div className="flex items-center justify-between w-full gap-5 px-4 mx-auto md:px-6 max-w-screen-2xl">
+			<div className="flex items-center justify-between w-full gap-5 px-4 mx-auto md:px-6 max-w-screen-2xl xl:px-12">
 				<a href="/">
 					<h1 className="logo">Mikael.</h1>
 				</a>

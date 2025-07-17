@@ -12,36 +12,38 @@ const Hero = () => {
 			id="home"
 			className="pt-32"
 		>
-			<div className="container items-center md:grid md:grid-cols-2 md:gap-20">
-				<div>
-					<div className="flex items-center gap-3">
-						<motion.figure
-							initial={{ scale: 0 }}
-							whileInView={{ scale: 1 }}
-							transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
-							className="w-20 h-20 rounded-lg img_container md:w-9 md:h-9"
-						>
-							<img
-								src="/assets/my_pic.png"
-								width={40}
-								height={40}
-								loading="lazy"
-								alt="Mikael Duru Portrait"
-								className="img_cover"
-							/>
-						</motion.figure>
+			<div className="container items-center md:grid lg:grid-cols-2 md:gap-20">
+				<div className="max-w-[60ch] max-lg:mx-auto">
+					<div>
+						<div className="flex items-center gap-3">
+							<motion.figure
+								initial={{ scale: 0 }}
+								whileInView={{ scale: 1 }}
+								transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+								className="w-20 h-20 rounded-lg img_container lg:w-9 lg:h-9"
+							>
+								<img
+									src="/assets/my_pic.png"
+									width={40}
+									height={40}
+									loading="lazy"
+									alt="Mikael Duru Portrait"
+									className="img_cover"
+								/>
+							</motion.figure>
 
-						<motion.p
-							initial={{ opacity: 0 }}
-							whileInView={{ opacity: 1 }}
-							transition={{ duration: 0.6, delay: 0.7 }}
-							className="flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide"
-						>
-							<span className="relative rounded-full size-2 bg-emerald-400">
-								<span className="absolute inset-0 rounded-full size-2 bg-emerald-400 animate-ping"></span>
-							</span>
-							Available for work
-						</motion.p>
+							<motion.p
+								initial={{ opacity: 0 }}
+								whileInView={{ opacity: 1 }}
+								transition={{ duration: 0.6, delay: 0.7 }}
+								className="flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide"
+							>
+								<span className="relative rounded-full size-2 bg-emerald-400">
+									<span className="absolute inset-0 rounded-full size-2 bg-emerald-400 animate-ping"></span>
+								</span>
+								Available for work
+							</motion.p>
+						</div>
 					</div>
 
 					<>
@@ -49,7 +51,7 @@ const Hero = () => {
 							initial={{ y: -20, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
 							transition={{ duration: 0.6, delay: 0.3 }}
-							className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-3"
+							className="headline-1 !max-w-[20ch] mt-5 mb-3"
 						>
 							Building Scalable Modern Web Apps that Solve Real Problems.
 						</motion.h2>
@@ -93,12 +95,12 @@ const Hero = () => {
 							whileInView={{ y: 0, opacity: 1 }}
 							transition={{ duration: 0.6, delay: 1.2 }}
 						>
-							<ButtonOutline href="#contact" label="Hire me" />
+							<ButtonOutline href="#contact" label="Hire me" classes="!px-8" />
 						</motion.div>
 					</div>
 				</div>
 
-				<div className="hidden md:block">
+				<div className="hidden lg:block">
 					<motion.figure
 						initial={{ x: 30, opacity: 0 }}
 						whileInView={{ x: 0, opacity: 1 }}
