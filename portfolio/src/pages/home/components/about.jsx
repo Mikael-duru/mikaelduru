@@ -82,12 +82,11 @@ const About = () => {
 								<span className="text-lg font-semibold text-zinc-50">
 									Duru Michael C.
 								</span>
-								, an experienced front-end/web app developer with a strong
-								passion for merging creativity and code to build visually
-								appealing, highly functional, and user-friendly web
-								applications. My goal is to create digital experiences that
-								leave a lasting impression. Let&apos;s bring your vision to
-								life!
+								, an experienced front-end developer with a strong passion for
+								crafting intuitive and engaging interfaces that prioritize
+								scalability, performance, and clean interfaces. My goal is to
+								create digital experiences that leave a lasting impression.
+								Let&apos;s bring your ideas to life!
 							</p>
 
 							<motion.ul

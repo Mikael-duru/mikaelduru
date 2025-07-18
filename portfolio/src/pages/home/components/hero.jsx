@@ -47,14 +47,14 @@ const Hero = () => {
 					</div>
 
 					<>
-						<motion.h2
+						<motion.h1
 							initial={{ y: -20, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
 							transition={{ duration: 0.6, delay: 0.3 }}
 							className="headline-1 !max-w-[20ch] mt-5 mb-3"
 						>
-							Building Scalable Modern Web Apps that Solve Real Problems.
-						</motion.h2>
+							Crafting Intuitive Digital Experiences as a Front End Developer.
+						</motion.h1>
 						<motion.p
 							initial={{ y: -30, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
@@ -62,7 +62,9 @@ const Hero = () => {
 							className="mb-8 text-sm sm:text-base lg:mb-10 text-zinc-300"
 						>
 							<Typewriter
-								words={["Pixels, performance, and purpose — that's my stack."]}
+								words={[
+									"Focused on scalability, performance, and clean interfaces.",
+								]}
 								loop={0}
 								cursor
 								cursorStyle="_"
@@ -82,7 +84,7 @@ const Hero = () => {
 						>
 							<ButtonPrimary
 								download={true}
-								href={"/mcduru_resume.pdf"}
+								href={"/mikael-duru-front-end-developer.pdf"}
 								target="_blank"
 								label="My Resume"
 								icon="download"
