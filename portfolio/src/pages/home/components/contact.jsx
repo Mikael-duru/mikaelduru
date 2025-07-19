@@ -27,7 +27,7 @@ const Contact = () => {
 				else if (!/^[\w.-]+@[\w.-]+\.\w+$/.test(value)) error = "Invalid email";
 				break;
 			case "message":
-				if (value.length < 10) error = "Message must be at least 10 characters";
+				if (value.length < 2) error = "Message must be at least 2 characters";
 				break;
 			default:
 				break;
